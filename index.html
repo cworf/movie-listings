@@ -6,9 +6,78 @@
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title>Template</title>
+    <title>generic theater</title>
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="jumbotron">
+          generic theater
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
+          <form class="movie-list" action="index.html" method="post">
+            <div class="form-group">
+              <label for="movie1">
+                <div class="card">
+                  <img class="card-img-top" src="" alt="">
+                  MOVIE NAME
+                </div>
+              </label>
+              <input id="movie1" type="radio" name="movie" value="">
+              <label for="movie2">
+                <div class="card">
+                  <img class="card-img-top" src="" alt="">
+                  MOVIE NAME
+                </div>
+              </label>
+              <input id="movie2" type="radio" name="movie" value="">
+              <label for="movie3">
+                <div class="card">
+                  <img class="card-img-top" src="" alt="">
+                  MOVIE NAME
+                </div>
+              </label>
+              <input id="movie3" type="radio" name="movie" value="">
+            </div>
+            <div class="form-group hidden">
+              <label>Age: <input id="age" type="number" name="" value=""></label>
 
+              <label>Showtime:
+              <select type="list">
+                <option value="-2">12PM</option>
+                <option value="-2">2PM</option>
+                <option value="-2">4PM</option>
+                <option value="0">6PM</option>
+                <option value="0">8PM</option>
+              </select></label>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-1">
+        </div>
+      </div> <!--ROW-->
+      <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
+          <div class="results">
+            <div class="card">
+              <div class="card-header">
+                Your Fee...
+              </div>
+              <div class="card-body">
+                <h5 id="chosen-movie"></h5>
+                <span class="price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+      </div> <!--ROW-->
+    </div>
   </body>
 </html>
