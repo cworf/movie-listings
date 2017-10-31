@@ -22,30 +22,35 @@
               <label for="movie1">
                 <div class="card">
                   <img class="card-img-top" src="" alt="">
-                  MOVIE NAME
+                  BLADERUNNER 2049
                 </div>
               </label>
-              <input id="movie1" type="radio" name="movie" value="">
+              <input id="movie1" type="radio" name="movie" value="10">
               <label for="movie2">
                 <div class="card">
                   <img class="card-img-top" src="" alt="">
-                  MOVIE NAME
+                  RED
                 </div>
               </label>
-              <input id="movie2" type="radio" name="movie" value="">
+              <input id="movie2" type="radio" name="movie" value="7">
               <label for="movie3">
                 <div class="card">
                   <img class="card-img-top" src="" alt="">
-                  MOVIE NAME
+                  ATTACK THE GAS STATION
                 </div>
               </label>
-              <input id="movie3" type="radio" name="movie" value="">
+              <input id="movie3" type="radio" name="movie" value="5">
             </div>
             <div class="form-group hidden">
-              <label>Age: <input id="age" type="number" name="" value=""></label>
+              <label>Age:
+              <select type="list" name="ages">
+                <option value="0">Children</option>
+                <option value="0">Regular</option>
+                <option value="-3">Senior</option>
+              </select></label>
 
               <label>Showtime:
-              <select type="list">
+              <select type="list" name="showings">
                 <option value="-2">12PM</option>
                 <option value="-2">2PM</option>
                 <option value="-2">4PM</option>
@@ -70,7 +75,8 @@
               </div>
               <div class="card-body">
                 <h5 id="chosen-movie"></h5>
-                <span class="price"></span>
+
+                <span id="price"></span>
               </div>
             </div>
           </div>

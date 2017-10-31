@@ -6,6 +6,6 @@ label {
     cursor: pointer;
 }
 
-.results {
+.results, .hidden {
   display: none;
 }
